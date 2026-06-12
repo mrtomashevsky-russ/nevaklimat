@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { BRAND, QUIZ, TRUST, areaFromQuiz, recommend } from "@/config/site";
 import { money } from "@/lib/money";
@@ -58,15 +59,15 @@ export function QuizPageApp() {
     <div className="qpage">
       <div className="qpage__bg" />
       <header className="qpage__top">
-        <a className="logo" href="/">
+        <Link className="logo" href="/">
           <span className="logo__mark">
             <Icon name="spark" size={20} stroke={2.4} />
           </span>
           <span className="logo__txt">{BRAND.name}</span>
-        </a>
-        <a className="qpage__back" href="/">
+        </Link>
+        <Link className="qpage__back" href="/">
           <Icon name="close" size={16} /> На сайт
-        </a>
+        </Link>
       </header>
 
       <main className="qpage__main">
@@ -95,9 +96,9 @@ export function QuizPageApp() {
                   <Icon name="gift" size={15} /> Подарок закреплён за вами
                 </span>
               </div>
-              <a className="btn btn--soft btn--lg" href="/" style={{ marginTop: 24 }}>
+              <Link className="btn btn--soft btn--lg" href="/" style={{ marginTop: 24 }}>
                 Вернуться на сайт
-              </a>
+              </Link>
             </div>
           ) : onResult ? (
             <div className="qpage__res">
