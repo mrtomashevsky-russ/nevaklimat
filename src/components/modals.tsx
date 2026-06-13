@@ -164,7 +164,7 @@ export function QuizModal({ open, onClose, onLead }: { open: boolean; onClose: (
           <div className="eyebrow">Ваш подбор готов</div>
           <h3>Рекомендуем: {rec.model}</h3>
           <div className="quiz-res__price">
-            Пакет «{rec.pkg}» — <b>от {money(rec.price)}</b> под ключ
+            Пакет «{rec.pkg}» — <b>{money(rec.price)}</b> под ключ
           </div>
           <p className="muted">Оставьте телефон — назовём точную цену именно для вашей комнаты и закрепим подарок.</p>
           <PhoneField
@@ -291,7 +291,7 @@ export function QuickCalcModal({
               <span className="muted">Рекомендуем</span>
               <b>{rec.model}</b>
             </div>
-            <div className="qcalc__price">от {money(rec.price)}</div>
+            <div className="qcalc__price">{money(rec.price)}</div>
           </div>
           <PhoneField
             value={phone}

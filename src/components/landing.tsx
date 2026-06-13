@@ -395,7 +395,7 @@ function Calculator({ openQuick }: { openQuick: (preset?: QuickLeadPreset) => vo
           <div className="calc__model">{rec.model}</div>
           <div className="calc__pkg">Пакет «{rec.pkg}»</div>
           <div className="calc__price">
-            от {money(rec.price)}
+            {money(rec.price)}
             <span> под ключ</span>
           </div>
           <Btn variant="cta" size="lg" full onClick={() => openQuick({ source: "Калькулятор", payload: { area }, rec, area })} icon="arrow">
@@ -421,8 +421,8 @@ function Pricing({ openQuick }: { openQuick: (preset?: QuickLeadPreset) => void 
             </div>
             <div className="price__power">{pkg.power}</div>
             <div className="price__cost">
-              <span className="price__old">{money(pkg.old)}</span>
-              <span className="price__now">от {money(pkg.price)}</span>
+              {pkg.old && <span className="price__old">{money(pkg.old)}</span>}
+              <span className="price__now">{money(pkg.price)}</span>
             </div>
             <ul className="price__list">
               {pkg.includes.map((item) => (

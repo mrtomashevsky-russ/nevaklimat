@@ -19,7 +19,7 @@ const unbounded = Unbounded({
 });
 
 const title = "НеваКлимат — кондиционеры под ключ в Санкт-Петербурге";
-const description = "Продажа и установка кондиционеров в квартирах Санкт-Петербурга. Подбор, монтаж за 1 день, гарантия 3 года, цена под ключ от 29 900 ₽.";
+const description = "Продажа и установка кондиционеров в квартирах Санкт-Петербурга. Подбор, монтаж за 1 день, гарантия 3 года. Пакеты под ключ: 36 900–61 900 ₽.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BRAND.siteUrl),
@@ -57,7 +57,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       addressLocality: BRAND.city,
       addressCountry: "RU"
     },
-    priceRange: "от 29 900 ₽"
+    priceRange: "36 900–61 900 ₽"
   };
 
   return (

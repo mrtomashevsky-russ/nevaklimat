@@ -105,7 +105,7 @@ export function QuizPageApp() {
               <div className="eyebrow">Ваш подбор готов</div>
               <h2>Рекомендуем: {rec.model}</h2>
               <div className="qpage__resprice">
-                Пакет «{rec.pkg}» — <b>от {money(rec.price)}</b> под ключ
+                Пакет «{rec.pkg}» — <b>{money(rec.price)}</b> под ключ
               </div>
               <p className="muted">Оставьте телефон — назовём точную цену именно для вашей комнаты и закрепим подарок.</p>
               <PhoneField
