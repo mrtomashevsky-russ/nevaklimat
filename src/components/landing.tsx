@@ -522,6 +522,8 @@ function FinalCTA({ onLead, openQuick }: { onLead: (input: LeadPayload) => Promi
           <div className="eyebrow eyebrow--light">Готовы к прохладе?</div>
           <h2>Оставьте телефон — назовём цену под ключ и подарим обслуживание</h2>
           <p>Перезвоним за 15 минут. Замер бесплатный, цену фиксируем — без доплат на месте.</p>
+        </div>
+        <div className="final__offers">
           <GiftsStrip compact />
         </div>
         <div className="final__form">

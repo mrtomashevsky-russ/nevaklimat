@@ -299,12 +299,13 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid color
 
 /* ===== FINAL ===== */
 .final{background:linear-gradient(160deg,var(--ink),color-mix(in srgb,var(--ink) 78%,var(--primary)));color:#fff;padding:88px 0;margin-top:10px;}
-.final__in{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,420px);gap:46px;align-items:center;}
-.final__head{min-width:0;}
+.final__in{display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,420px);column-gap:46px;row-gap:24px;align-items:start;}
+.final__head{grid-column:1;min-width:0;}
 .final__head h2{color:#fff;font-size:clamp(26px,3.4vw,40px);font-weight:800;margin:12px 0 14px;text-wrap:balance;}
-.final__head p{color:#bcd0e6;font-size:18px;margin-bottom:24px;max-width:660px;}
-.final__head .gifts{max-width:680px;}
-.final__form{justify-self:end;width:100%;max-width:420px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-lg);padding:32px 28px;box-shadow:0 24px 54px -28px rgba(0,0,0,.45);}
+.final__head p{color:#bcd0e6;font-size:18px;max-width:660px;}
+.final__offers{grid-column:1;grid-row:2;min-width:0;}
+.final__offers .gifts{max-width:680px;}
+.final__form{grid-column:2;grid-row:2;align-self:start;justify-self:end;width:100%;max-width:420px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-lg);padding:32px 28px;box-shadow:0 24px 54px -28px rgba(0,0,0,.45);}
 .final__form .inlead{margin:0;width:100%;}
 .final__form .inlead__row{grid-template-columns:1fr;gap:12px;}
 .final__form .inlead__foot{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;margin-top:14px;text-align:center;}
@@ -434,6 +435,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid color
 @media (max-width:1024px){
   .hero__in,.final__in{grid-template-columns:1fr;gap:30px;}
   .hero__col--side{order:-1;max-width:520px;}
+  .final__head,.final__offers,.final__form{grid-column:1;grid-row:auto;}
   .final__form{justify-self:center;max-width:520px;}
   .calc{grid-template-columns:1fr;}
   .steps,.brands{grid-template-columns:repeat(2,1fr);}
