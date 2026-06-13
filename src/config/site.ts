@@ -40,7 +40,7 @@ export const BRAND = {
   tg: process.env.NEXT_PUBLIC_BRAND_TG || "https://t.me/",
   max: process.env.NEXT_PUBLIC_BRAND_MAX || "https://max.ru/",
   tagline: "Кондиционеры под ключ в Петербурге",
-  heroImage: process.env.NEXT_PUBLIC_HERO_IMAGE || "/images/hero-installation.svg",
+  heroImage: process.env.NEXT_PUBLIC_HERO_IMAGE || "/images/hero-technician-installation.jpg",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
 };
 
