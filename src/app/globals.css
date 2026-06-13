@@ -305,11 +305,12 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid color
 .final__head p{color:#bcd0e6;font-size:18px;max-width:660px;}
 .final__offers{grid-column:1;grid-row:2;min-width:0;}
 .final__offers .gifts{max-width:680px;}
-.final__form{grid-column:2;grid-row:2;align-self:start;justify-self:end;width:100%;max-width:420px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-lg);padding:32px 28px;box-shadow:0 24px 54px -28px rgba(0,0,0,.45);}
+.final__form{grid-column:2;grid-row:2;align-self:start;justify-self:end;width:100%;max-width:420px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);border-radius:var(--r-lg);padding:20px 24px;box-shadow:0 24px 54px -28px rgba(0,0,0,.45);}
 .final__form .inlead{margin:0;width:100%;}
-.final__form .inlead__row{grid-template-columns:1fr;gap:12px;}
-.final__form .inlead__foot{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;margin-top:14px;text-align:center;}
-.final__form .linkbtn{font-size:15px;}
+.final__form .inlead__row{grid-template-columns:minmax(0,1fr) 190px;gap:10px;}
+.final__form .inlead__foot{display:grid;grid-template-columns:minmax(0,1fr) 190px;align-items:start;gap:10px;margin-top:10px;text-align:center;}
+.final__form .policy{line-height:1.3;}
+.final__form .linkbtn{font-size:15px;line-height:1.25;min-height:auto;padding:0;}
 
 /* ===== MODALS ===== */
 .modal-ov{position:fixed;inset:0;z-index:120;background:rgba(8,20,33,.55);backdrop-filter:blur(4px);
@@ -487,6 +488,9 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid color
   .review__top{gap:10px;}
   .review__tag{text-align:center;}
   .final__form{max-width:none;padding:24px 20px;}
+  .final__form .inlead__row{grid-template-columns:1fr;}
+  .final__form .inlead__foot{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;}
+  .final__form .linkbtn{min-height:44px;padding:4px 0;}
   .modal{padding:30px 20px;}
   .vsw{bottom:14px;padding:6px 8px 6px 12px;gap:3px;}
   .vsw__lbl,.vsw__leads{display:none;}
