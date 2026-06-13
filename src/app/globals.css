@@ -196,7 +196,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid color
 .inlead__row .field{width:100%;}
 .inlead__row .btn{width:100%;}
 .inlead__foot{display:grid;grid-template-columns:minmax(0,1fr) var(--inlead-cta-width);align-items:center;gap:10px;margin-top:12px;}
-.inlead__foot .linkbtn{justify-self:start;}
+.inlead__foot .linkbtn{justify-self:center;text-align:center;}
 .inlead__foot .policy{justify-self:center;text-align:center;}
 .inlead--light{max-width:none;}
 .inlead--light .field{background:rgba(255,255,255,.95);}
