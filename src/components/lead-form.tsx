@@ -114,7 +114,8 @@ export function InlineLead({
           </button>
         )}
         <span className="policy policy--inline">
-          <Icon name="shield" size={13} /> Без спама. Перезвоним за 15 минут.
+          <Icon name="shield" size={13} />
+          <span>Без спама. Перезвоним за 15 минут.</span>
         </span>
       </div>
     </div>
